@@ -1,7 +1,7 @@
 // suaraGenZ — edit nomor WhatsApp dan email redaksi sebelum publikasi.
 const CONFIG = {
-  whatsappNumber: "6281234567890", // format internasional tanpa + atau spasi
-  editorialEmail: "redaksi@contoh.com" // ganti dengan email yang aktif
+  whatsappNumber: "6285340219603", // format internasional tanpa + atau spasi
+  editorialEmail: "andimassarappi078.com" // ganti dengan email yang aktif
 };
 
 const today = document.getElementById("today");
