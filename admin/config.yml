@@ -1,0 +1,29 @@
+backend:
+  name: git-gateway
+  branch: main
+
+locale: id
+media_folder: "images/uploads"
+public_folder: "/images/uploads"
+
+publish_mode: editorial_workflow
+
+site_url: https://suaragenerasiz.netlify.app
+display_url: https://suaragenerasiz.netlify.app
+
+collections:
+  - name: "berita"
+    label: "Berita"
+    label_singular: "Berita"
+    folder: "content/berita"
+    create: true
+    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
+    extension: "md"
+    format: "frontmatter"
+    fields:
+      - { label: "Judul", name: "title", widget: "string" }
+      - { label: "Ringkasan", name: "description", widget: "text" }
+      - { label: "Kategori", name: "category", widget: "select", options: ["Nasional", "Daerah", "Ekonomi", "Politik", "Pendidikan", "Teknologi", "Olahraga", "Opini"] }
+      - { label: "Tanggal terbit", name: "date", widget: "datetime" }
+      - { label: "Gambar utama", name: "thumbnail", widget: "image", required: false }
+      - { label: "Isi berita", name: "body", widget: "markdown" }
